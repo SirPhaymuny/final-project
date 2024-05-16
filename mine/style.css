@@ -1,0 +1,110 @@
+/* Reset default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    /* Gradient background */
+    background: linear-gradient(45deg, #DAA520, #800080);
+}
+
+.container {
+    width: 50%;
+    /* Set width to 50% of the background size */
+    margin: 50px auto;
+    background-color: rgba(255, 255, 255, 0.3);
+        /* Soft pink color */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1,
+h2 {
+    color: #333;
+    margin-bottom: 15px;
+}
+
+p {
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="date"],
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+input[type="file"] {
+    display: block;
+    margin-top: 5px;
+}
+
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+/* Custom file input styling */
+.form-group {
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.form-group>label,
+.form-group>.custom-file-drop {
+    flex: 0 0 calc(33.33% - 10px);
+    margin-right: 10px;
+    
+}
+
+.custom-file-drop {
+    border: 2px dashed #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.drop-message {
+    font-size: 16px;
+    color: #666;
+}
+
+.custom-file-drop.dragover {
+    background-color: #f0f0f0;
+}

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Customer Information Form</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <div class="container">
+            <h1>Customer Information</h1>
+            <p>Please input the following information to finish the process.</p>
+
+            <form>
+                <h2>Personal Information</h2>
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="nationality">Nationality</label>
+                    <input type="text" id="nationality" name="nationality"
+                        required>
+                </div>
+                <div class="form-group">
+                    <label for="dob">Date of Birth</label>
+                    <input type="date" id="dob" name="dob" required>
+                </div>
+                <div class="form-group">
+                    <label for="gender">Gender</label>
+                    <select name="gender" id="gender">
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                    </select>
+                </div>
+
+                <h2>Phone Number</h2>
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+
+                <h2>Account Setup</h2>
+                <p>Please input the following information to finish the
+                    process.</p>
+                <div class="form-group">
+                    <label for="account-type">Account Type</label>
+                    <select name="account-type" id="account-type">
+                        <option value="saving">Saving Account</option>
+                        <option value="checking">Checking Account</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="currency">Currency</label>
+                    <select name="currency" id="currency">
+                        <option value="usd">USD</option>
+                        <option value="eur">EUR</option>
+                        <option value="gbp">GBP</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <input type="checkbox" id="debit-card" name="debit-card">
+                    <label for="debit-card">Debit Card</label>
+                </div>
+
+                <h2>Debit Card Details (if applicable)</h2>
+                <div class="form-group">
+                    <label for="card-type">Type of Card</label>
+                    <select name="card-type" id="card-type">
+                        <option value="visa">Visa</option>
+                        <option value="mastercard">Mastercard</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="fee">Fee Charge</label>
+                    <select name="fee" id="fee">
+                        <option value="monthly">Monthly</option>
+                        <option value="yearly">Yearly</option>
+                    </select>
+                </div>
+
+                <h2>Pick Up Branch</h2>
+                <div class="form-group">
+                    <label for="branch">Pick Up Branch</label>
+                    <select name="branch" id="branch">
+                        <option value="sensok">Sensok</option>
+                        <option value="takhmao">Takhmao</option>
+                        <option value="phnom-penh">Phnom Penh</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="secret-phrase">Secret Phrase</label>
+                    <input type="text" id="secret-phrase" name="secret-phrase"
+                        required>
+                </div>
+
+                <h2>Mobile Banking App</h2>
+                <p>Take a picture of your NID/Passport and Signature to use the
+                    Mobile Banking App.</p>
+                <div class="form-group">
+                    <label for="nid-passport">Take a Picture of NID/Passport</label>
+                    <div class="custom-file-drop" id="customFileDrop">
+                        <div class="drop-message" id="dropMessage">Drag & Drop files here or click to select</div>
+                    </div>
+                    <label for="nid-passport">Take a Picture of NID/Passport</label>
+                    <div class="custom-file-drop" id="customFileDrop">
+                        <div class="drop-message" id="dropMessage">Drag & Drop files here or click to select</div>
+                    </div>
+                    <label for="nid-passport">Take a Picture of NID/Passport</label>
+                    <div class="custom-file-drop" id="customFileDrop">
+                        <div class="drop-message" id="dropMessage">Drag & Drop files here or click to select</div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </body>
+</html>
